@@ -3,7 +3,7 @@ export const PRODUCTS = [
     id:"1",
     category:"1",
     name:"Bandolera Jamaica",
-    description:"Clasico Bandolera Frances",
+    description:"Hermosa bandolera elaborada con ecocuero",
     weight:"350gr",
     price: 16
 },
@@ -11,7 +11,7 @@ export const PRODUCTS = [
     id:"2",
     category:"1",
     name:"Bandolera Army",
-    description:"Bandolera de alta hidratacion, miga alveolada y corteza crujiente",
+    description:"Hermosa bandolera elaborada con ecocuero",
     weight:"800gr",
     price: 30
 },
@@ -19,7 +19,7 @@ export const PRODUCTS = [
     id:"3",
     category:"1",
     name:"Bandolera Pía",
-    description:"Textura sueve, decorado con semillas de sesamo tostadas",
+    description:"Hermosa bandolera elaborada con ecocuero",
     weight:"120gr",
     price: 5
 },
@@ -27,7 +27,7 @@ export const PRODUCTS = [
     id:"4",
     category:"1",
     name:"Bandolera Canadá",
-    description:"Pidelo entero o tajado, con o sin semillas",
+    description:"Hermosa bandolera elaborada con ecocuero",
     weight:"900gr",
     price: 35,
 },
@@ -35,7 +35,7 @@ export const PRODUCTS = [
     id:"5",
     category:"2",
     name:"Mochila Sevilla",
-    description:"",
+    description:"Hermosa mochila elaborada con ecocuero",
     weight:"350gr",
     price: 16
 },
@@ -43,7 +43,7 @@ export const PRODUCTS = [
     id:"6",
     category:"2",
     name:"Mochila Siena",
-    description:"",
+    description:"Hermosa mochila elaborada con ecocuero",
     weight:"350gr",
     price: 16
 },
@@ -51,7 +51,7 @@ export const PRODUCTS = [
     id:"7",
     category:"2",
     name:"Mochila Viena",
-    description:"",
+    description:"Hermosa mochila elaborada con ecocuero",
     weight:"350gr",
     price: 16
 },
@@ -59,7 +59,7 @@ export const PRODUCTS = [
     id:"8",
     category:"2",
     name:"Mochila Alemania",
-    description:"",
+    description:"Hermosa mochila elaborada con ecocuero",
     weight:"350gr",
     price: 16
 },
@@ -67,7 +67,7 @@ export const PRODUCTS = [
     id:"9",
     category:"3",
     name:"Riñonera Belice",
-    description:"",
+    description:"Hermosa riñonera elaborada con ecocuero",
     weight:"350gr",
     price: 16
 },
@@ -75,7 +75,7 @@ export const PRODUCTS = [
     id:"10",
     category:"3",
     name:"Riñonera Praga",
-    description:"",
+    description:"Hermosa riñonera elaborada con ecocuero",
     weight:"350gr",
     price: 16
 },
@@ -83,7 +83,7 @@ export const PRODUCTS = [
     id:"11",
     category:"3",
     name:"Riñonera Marfil",
-    description:"",
+    description:"Hermosa riñonera elaborada con ecocuero",
     weight:"350gr",
     price: 16
 },
@@ -91,7 +91,7 @@ export const PRODUCTS = [
     id:"12",
     category:"3",
     name:"Riñonera Cielo",
-    description:"",
+    description:"Hermosa riñonera elaborada con ecocuero",
     weight:"350gr",
     price: 16
 },
