@@ -1,9 +1,11 @@
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
+import { COLORS } from '../constants/colors'
 
 const ProductItem = ({ item, onSelected }) => {
     return (
-        <TouchableOpacity
+        <TouchableOpacity 
+        style={styles.container}
         onPress={()=> onSelected(item)}>
             <View style={styles.productItem}>
                 <View>
@@ -24,17 +26,23 @@ const ProductItem = ({ item, onSelected }) => {
 export default ProductItem
 
 const styles = StyleSheet.create({
+    container:{
+        flex:1,
+        backgroundColor:"white"
+    },
     productItem:{
         padding:20,
         margin:10,
         borderRadius:3,
-        backgroundColor:'#ccc'
+        backgroundColor:COLORS.three
     },
     title:{
         fontSize:20,
-        fontFamily:"PermanentMarker"
+        fontFamily:"PermanentMarker",
+        color:COLORS.secundary
     },
     details:{
-        fontSize:18
+        fontSize:15,
+        color:COLORS.secundary
     }
 })

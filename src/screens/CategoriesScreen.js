@@ -1,4 +1,4 @@
-import {  FlatList} from 'react-native'
+import {  FlatList, StyleSheet, View } from 'react-native'
 import React from 'react'
 import GridItem from '../components/GridItem'
 import { useSelector, useDispatch, connect } from 'react-redux'
@@ -22,13 +22,21 @@ const renderGridItem = ({item}) =>(
 )
 
   return (
-  <FlatList
-  data={categories}
-  keyExtractor={(item) => item.id}
-  renderItem={renderGridItem}
-  />
+    
+      <FlatList
+      style={styles.container}
+      data={categories}
+      keyExtractor={(item) => item.id}
+      renderItem={renderGridItem}
+      />
   )
 }
 
 export default connect() (CategoriesScreen)
 
+const styles = StyleSheet.create({
+  container:{
+    backgroundColor: "#fff",
+    
+  }
+})

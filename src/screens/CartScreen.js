@@ -3,6 +3,7 @@ import React from 'react'
 import CartItem from '../components/CartItem'
 import { useSelector, useDispatch } from 'react-redux'
 import { confirmCart, removeItem } from '../store/actions/cart.action'
+import { COLORS } from '../constants/colors'
 
 const CartScreen = () => {
   const dispatch = useDispatch()
@@ -30,7 +31,7 @@ const CartScreen = () => {
       </View>
       <View style={styles.footer}>
         <TouchableOpacity style={styles.confirm} onPress={handleConfirmCart}>
-          <Text>Confirmar</Text>
+          <Text style={styles.text}>Confirmar</Text>
           <View style={styles.total}>
             <Text style={styles.text}>Total</Text>
             <Text style={styles.text}>{total}</Text>
@@ -55,11 +56,11 @@ const styles = StyleSheet.create({
   },
   footer: {
     padding: 12,
-    borderTopColor: "#ccc",
+    borderTopColor:COLORS.secundary,
     borderTopWidth: 1,
   },
   confirm: {
-    backgroundColor: "#ccc",
+    backgroundColor: COLORS.three,
     borderRadius: 10,
     padding: 10,
     flexDirection: "row",
@@ -67,11 +68,12 @@ const styles = StyleSheet.create({
     justifyContent: "space-between"
   },
   total: {
-    flexDirection: "row"
+    flexDirection: "row",
   },
   text: {
     fontSize: 18,
     padding: 8,
+    color:COLORS.secundary
   }
 
 })

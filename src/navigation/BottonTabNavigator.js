@@ -5,6 +5,9 @@ import ShopNavigator from './ShopNavigator';
 import CartNavigator from './CartNavigator';
 import { NavigationContainer } from "@react-navigation/native";
 import OrderNavigator from './OrderNavigator';
+import PlaceNavigator from './PlaceNavigator';
+import { COLORS } from "../constants/colors";
+import { Colors } from 'react-native/Libraries/NewAppScreen';
 
 
 
@@ -23,24 +26,32 @@ export default BootomTabNavigator = () => {
                 <BottomTabs.Screen name="ShopTab" component={ShopNavigator} options={{
                     tabBarIcon: ({ focus }) => (
                         <View style={styles.item}>
-                            <Ionicons name='home' size={20} color="black" />
-                            <Text>Tienda</Text>
+                            <Ionicons name='home' size={20} color={COLORS.secundary} />
+                            <Text style={styles.text}>Tienda</Text>
                         </View>
                     )
                 }} />
                 <BottomTabs.Screen name="CartTab" component={CartNavigator} options={{
                     tabBarIcon: ({ focus }) => (
                         <View style={styles.item}>
-                            <Ionicons name='cart' size={20} color="black" />
-                            <Text>Carrito</Text>
+                            <Ionicons name='cart' size={20} color={COLORS.secundary} />
+                            <Text style={styles.text}>Carrito</Text>
                         </View>
                     )
                 }} />
                 <BottomTabs.Screen name="OrdersTab" component={OrderNavigator} options={{
                     tabBarIcon: ({ focus }) => (
                         <View style={styles.item}>
-                            <Ionicons name='list' size={20} color="black" />
-                            <Text>Ordenes</Text>
+                            <Ionicons name='list' size={20} color={COLORS.secundary} />
+                            <Text style={styles.text}>Ordenes</Text>
+                        </View>
+                    )
+                }} />
+                <BottomTabs.Screen name="Address" component={PlaceNavigator} options={{
+                    tabBarIcon: ({ focus }) => (
+                        <View style={styles.item}>
+                            <Ionicons name='map' size={20} color={COLORS.secundary} />
+                            <Text style={styles.text}>Direcciones</Text>
                         </View>
                     )
                 }} />
@@ -57,15 +68,19 @@ const styles = StyleSheet.create({
         shadowRadius: 0.5,
         elevation: 5,
         justifyContent: 'center',
-        bottom: 0,
+        bottom: 10,
         left: 20,
         borderRadius: 15,
         height: 90,
-        marginRight: 40
+        marginRight: 40,
+        backgroundColor: COLORS.primary
     },
     item: {
         flex: 1,
         justifyContent: "center",
         alignItems: "center"
+    },
+    text:{
+        color:COLORS.secundary
     }
 })

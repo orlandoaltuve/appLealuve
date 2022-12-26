@@ -1,4 +1,4 @@
-import { FlatList } from 'react-native'
+import { FlatList, StyleSheet } from 'react-native'
 import React, { useEffect } from 'react'
 import ProductItem from '../components/ProductItem'
 
@@ -31,6 +31,7 @@ const CategoryProductScreen = ({navigation, route}) => {
     
   return (
     <FlatList
+    style={styles.container}
     data={categoryProducts}
     keyExtractor={(item) => item.id}
     renderItem={renderProductItem}
@@ -40,3 +41,9 @@ const CategoryProductScreen = ({navigation, route}) => {
 
 export default connect() (CategoryProductScreen)
 
+const styles = StyleSheet.create({
+  container:{
+    backgroundColor: "#fff",
+    
+  }
+})

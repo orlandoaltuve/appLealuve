@@ -37,6 +37,7 @@ export default connect() (OrdersScreen)
 
 const styles = StyleSheet.create({
     container:{
+        backgroundColor: "#fff",
         flex:1,
         padding:18
     }
