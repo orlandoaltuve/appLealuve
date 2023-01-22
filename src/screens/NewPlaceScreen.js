@@ -3,9 +3,9 @@ import {
   View,
   Text,
   StyleSheet,
-  Button,
   TextInput,
   ScrollView,
+  TouchableOpacity,
 } from "react-native";
 
 import { addPlace } from "../store/actions/places.actions";
@@ -45,11 +45,10 @@ const NewPlaceScreen = ({ navigation, route }) => {
           onLocation={setLocation}
           mapLocation={route?.params?.mapLocation}
         />
-        <Button
-          title="Grabar direccion"
-          color={COLORS.three}
-          onPress={handleSave}
-        />
+
+        <TouchableOpacity onPress={handleSave} style={styles.button}>
+          <Text style={styles.text}>Grabar direccion</Text>
+        </TouchableOpacity>
       </View>
     </ScrollView>
   );
@@ -66,6 +65,9 @@ const styles = StyleSheet.create({
   label: {
     fontSize: 18,
     marginBottom: 16,
+    fontFamily: "PermanentMarker",
+    color:COLORS.secundary,
+
   },
   input: {
     borderBottomColor: COLORS.secundary,
@@ -74,6 +76,19 @@ const styles = StyleSheet.create({
     paddingHorizontal: 2,
     paddingVertical: 4,
   },
+  button:{
+    marginTop:15,
+    width:"100%",
+    backgroundColor:COLORS.three,
+    borderRadius: 10,
+    padding: 10,
+  },
+  text:{
+    textAlign: "center",
+    fontSize: 18,
+   
+    color: COLORS.secundary
+  }
 });
 
 export default NewPlaceScreen;

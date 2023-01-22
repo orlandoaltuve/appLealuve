@@ -1,4 +1,4 @@
-import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
+import { StyleSheet, Text, TouchableOpacity, View, Image } from 'react-native'
 import React from 'react'
 import { COLORS } from '../constants/colors'
 
@@ -11,12 +11,7 @@ const ProductItem = ({ item, onSelected }) => {
                 <View>
                     <Text style={styles.title}>{item.name}</Text>
                 </View>
-                <View>
-                    <Text style={styles.details}>{item.price}</Text>
-                    <Text style={styles.details}>{item.weight}</Text>
-
-                </View>
-
+                <Image source={item.img} style={styles.imagen} />
             </View>
 
         </TouchableOpacity>
@@ -27,22 +22,31 @@ export default ProductItem
 
 const styles = StyleSheet.create({
     container:{
+        alignItems:'center',
         flex:1,
-        backgroundColor:"white"
+        backgroundColor:"white",
+        
     },
     productItem:{
+        alignItems:'center',
         padding:20,
         margin:10,
-        borderRadius:3,
-        backgroundColor:COLORS.three
+        borderRadius:10,
+        backgroundColor:COLORS.three,
+        width:300,
+        
+        
     },
     title:{
         fontSize:20,
         fontFamily:"PermanentMarker",
-        color:COLORS.secundary
+        color:COLORS.secundary,
+        textAlign:'center'
     },
-    details:{
-        fontSize:15,
-        color:COLORS.secundary
+    imagen:{
+        width:220,
+        height:220,
+        margin:10,
+        borderRadius:10,
     }
 })

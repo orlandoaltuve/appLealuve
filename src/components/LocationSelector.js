@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { StyleSheet, Text, View, Button, Alert } from "react-native";
+import { StyleSheet, Text, View, Button, Alert, TouchableOpacity } from "react-native";
 import * as Location from "expo-location";
 import { useNavigation, useRoute } from "@react-navigation/native";
 
@@ -61,19 +61,17 @@ const LocationSelector = ({ onLocation, mapLocation }) => {
   return (
     <View style={styles.container}>
       <MapPreview location={pickedLocation} style={styles.preview}>
-        <Text> Location en proceso...</Text>
+        <Text style={styles.text}> Ubicación en proceso...</Text>
       </MapPreview>
       <View style={styles.actions}>
-        <Button
-          title="Obtain Location"
-          color={COLORS.three}
-          onPress={handleGetLocation}
-        />
-        <Button
+        <TouchableOpacity onPress={handleGetLocation} style={styles.button}>
+        <Text style={styles.text}> Obtener Ubicación</Text>
+        </TouchableOpacity>
+        {/* <Button
           title="Elegir del Mapa"
           color={COLORS.three}
           onPress={handlePickOnMap}
-        />
+        /> */}
       </View>
     </View>
   );
@@ -100,6 +98,17 @@ const styles = StyleSheet.create({
   },
   actions: {
     flexDirection: "row",
-    justifyContent: "space-around",
+    justifyContent: "center"
   },
+  text:{
+    textAlign:"center",
+    fontSize:18,
+    color:COLORS.secundary,
+  },
+  button:{
+    width:"70%",
+    backgroundColor:COLORS.three,
+    borderRadius: 10,
+    padding: 10,
+  }
 });

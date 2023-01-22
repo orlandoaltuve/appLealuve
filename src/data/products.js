@@ -5,7 +5,9 @@ export const PRODUCTS = [
     name:"Bandolera Jamaica",
     description:"Hermosa bandolera elaborada con ecocuero",
     weight:"350gr",
-    price: 16
+    price: 16,
+    img:require("../assets/image/bandolera1.jpg"),
+
 },
 {
     id:"2",
@@ -13,7 +15,8 @@ export const PRODUCTS = [
     name:"Bandolera Army",
     description:"Hermosa bandolera elaborada con ecocuero",
     weight:"800gr",
-    price: 30
+    price: 30,
+    img:require("../assets/image/bandolera2.jpg"),
 },
 {
     id:"3",
@@ -21,7 +24,8 @@ export const PRODUCTS = [
     name:"Bandolera Pía",
     description:"Hermosa bandolera elaborada con ecocuero",
     weight:"120gr",
-    price: 5
+    price: 5,
+    img:require("../assets/image/bandolera3.jpg"),
 },
 {
     id:"4",
@@ -30,6 +34,7 @@ export const PRODUCTS = [
     description:"Hermosa bandolera elaborada con ecocuero",
     weight:"900gr",
     price: 35,
+    img:require("../assets/image/bandolera4.jpg"),
 },
 {
     id:"5",
@@ -37,7 +42,8 @@ export const PRODUCTS = [
     name:"Mochila Sevilla",
     description:"Hermosa mochila elaborada con ecocuero",
     weight:"350gr",
-    price: 16
+    price: 16,
+    img:require("../assets/image/mochila1.jpeg"),
 },
 {
     id:"6",
@@ -45,7 +51,8 @@ export const PRODUCTS = [
     name:"Mochila Siena",
     description:"Hermosa mochila elaborada con ecocuero",
     weight:"350gr",
-    price: 16
+    price: 16,
+    img:require("../assets/image/mochila2.jpeg"),
 },
 {
     id:"7",
@@ -53,7 +60,8 @@ export const PRODUCTS = [
     name:"Mochila Viena",
     description:"Hermosa mochila elaborada con ecocuero",
     weight:"350gr",
-    price: 16
+    price: 16,
+    img:require("../assets/image/mochila3.jpg"),
 },
 {
     id:"8",
@@ -61,7 +69,8 @@ export const PRODUCTS = [
     name:"Mochila Alemania",
     description:"Hermosa mochila elaborada con ecocuero",
     weight:"350gr",
-    price: 16
+    price: 16,
+    img:require("../assets/image/mochila4.jpeg"),
 },
 {
     id:"9",
@@ -69,7 +78,8 @@ export const PRODUCTS = [
     name:"Riñonera Belice",
     description:"Hermosa riñonera elaborada con ecocuero",
     weight:"350gr",
-    price: 16
+    price: 16,
+    img:require("../assets/image/riñonera1.jpg"),
 },
 {
     id:"10",
@@ -77,7 +87,8 @@ export const PRODUCTS = [
     name:"Riñonera Praga",
     description:"Hermosa riñonera elaborada con ecocuero",
     weight:"350gr",
-    price: 16
+    price: 16,
+    img:require("../assets/image/riñonera2.jpg"),
 },
 {
     id:"11",
@@ -85,7 +96,8 @@ export const PRODUCTS = [
     name:"Riñonera Marfil",
     description:"Hermosa riñonera elaborada con ecocuero",
     weight:"350gr",
-    price: 16
+    price: 16,
+    img:require("../assets/image/riñonera3.jpeg"),
 },
 {
     id:"12",
@@ -93,7 +105,8 @@ export const PRODUCTS = [
     name:"Riñonera Cielo",
     description:"Hermosa riñonera elaborada con ecocuero",
     weight:"350gr",
-    price: 16
+    price: 16,
+    img:require("../assets/image/riñonera4.jpg"),
 },
 
 ]

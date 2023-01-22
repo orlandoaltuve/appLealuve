@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { StyleSheet, Text, View, Alert, Image, Button } from "react-native";
+import { StyleSheet, Text, View, Alert, Image, Button, TouchableOpacity } from "react-native";
 import * as ImagePicker from "expo-image-picker";
 import { COLORS } from "../constants/colors";
 
@@ -39,16 +39,16 @@ const ImageSelector = (props) => {
     <View style={styles.container}>
       <View style={styles.preview}>
         {!pickedUri ? (
-          <Text>No hay imagen seleccionada...</Text>
+          <Text style={styles.text}>No hay imagen seleccionada...</Text>
         ) : (
           <Image style={styles.image} source={{ uri: pickedUri }} />
         )}
       </View>
-      <Button
-        title="Tomar Foto"
-        color={COLORS.three}
-        onPress={handlerTakeImage}
-      />
+      <View style={styles.buttonContainer}>
+      <TouchableOpacity onPress={handlerTakeImage} style={styles.button}>
+        <Text style={styles.text}> Tomar Foto</Text>
+      </TouchableOpacity>
+      </View>
     </View>
   );
 };
@@ -72,4 +72,19 @@ const styles = StyleSheet.create({
     width: "100%",
     height: "100%",
   },
+  text: {
+    textAlign: "center",
+    fontSize: 18,
+    padding: 8,
+    color: COLORS.secundary
+  },
+  button: {
+    alignItems: "center",
+    width:"70%",
+    backgroundColor: COLORS.three,
+    borderRadius: 10,
+  },
+  buttonContainer:{
+    alignItems:"center"
+  }
 });

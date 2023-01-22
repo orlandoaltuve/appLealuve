@@ -30,7 +30,6 @@ const styles = StyleSheet.create({
     width: 70,
     height: 70,
     borderRadius: 35,
-    backgroundColor: "green",
   },
   info: {
     marginLeft: 25,
@@ -39,12 +38,13 @@ const styles = StyleSheet.create({
     alignItems: "flex-start",
   },
   title: {
-    color: "green",
+    color:COLORS.secundary,
     fontSize: 18,
     marginBottom: 6,
+    fontFamily: "PermanentMarker",
   },
   address: {
-    color: "#777",
+    color:COLORS.secundary,
     fontSize: 16,
   },
 });

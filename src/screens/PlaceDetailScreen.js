@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { View, Text, StyleSheet, ScrollView, Image } from "react-native";
 import { useSelector } from "react-redux";
 import MapPreview from "../components/MapPreview";
+import { COLORS } from '../constants/colors'
 
 
 const PlaceDetailScreen = ({ route }) => {
@@ -41,9 +42,8 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   image: {
-    height: "35%",
     minHeight: 300,
-    width: "100%",
+    width: "90%",
     padding: 20,
   },
   location: {
@@ -62,17 +62,17 @@ const styles = StyleSheet.create({
     padding: 20,
   },
   address: {
-    color: "green",
     textAlign: "center",
   },
   map: {
-    height: 300,
+    height: 200,
   },
   textContainer: {
     padding: 20,
   },
   title: {
     fontSize: 15,
+    color:COLORS.secundary,
   },
 });
 
