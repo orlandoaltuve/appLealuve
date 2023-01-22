@@ -1,34 +1,56 @@
 {
   "expo": {
     "name": "AppLealuve",
-    "slug": "AppLealuve",
+    "slug": "applealuve",
     "version": "1.0.0",
-    "platforms":["ios", "android"],
+    "platforms": [
+      "ios",
+      "android"
+    ],
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/logo.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/logo.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
     "updates": {
-      "fallbackToCacheTimeout": 0
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/db2278b9-3475-40ff-9ce4-b60a8ca06d67"
     },
     "assetBundlePatterns": [
       "**/*"
     ],
     "ios": {
+      "bundleIdentifier": "com.coderhouse.places",
+      "biuldNumber": "1.0.0",
       "supportsTablet": true
     },
     "android": {
+      "package": "com.coderhouse.places",
+      "versionCode": 1,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "permissions": [
+        "CAMERA",
+        "ACCESS_FINE_LOCATION",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "db2278b9-3475-40ff-9ce4-b60a8ca06d67"
+      }
+    },
+    "owner": "redpeli20",
+    "runtimeVersion": {
+      "policy": "appVersion"
     }
   }
 }
